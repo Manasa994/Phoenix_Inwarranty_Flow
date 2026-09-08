@@ -27,9 +27,9 @@ jobs:
 
       - name: Run the postman collection with newman
         run: |
-            newman run 'Inwarranty-flow Collection-Jathin.postman_collection.json'\
-            -e QA.postman_environment.json\
-            -d testData.csv\
+            newman run 'Inwarranty-flow Collection-Jathin.postman_collection.json' \
+            -e QA.postman_environment.json \
+            -d testData.csv \
             -r cli,htmlextra
 
   
