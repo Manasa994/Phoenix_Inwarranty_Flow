@@ -48,6 +48,7 @@ jobs:
           publish_dir: newman/
           
       - name: send Email notification
+        if: always()
         uses: dawidd6/action-send-mail@v20
         with:
           server_address: smtp.gmail.com
